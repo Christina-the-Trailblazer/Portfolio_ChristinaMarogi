@@ -1,0 +1,51 @@
+
+/* Header Container */
+.portfolio-header {
+    background-color: white;
+    margin: 20px;
+    padding: 15px 20px;
+    
+    /* Aligns name on the left and links on the right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Name Styling */
+.fullName {
+    font-size: 28px;
+    margin: 0; /* Prevents paragraph default margin from breaking layout */
+}
+
+/* Links Container (for the '|' dividers) */
+.web-links {
+    color: #333333;
+}
+
+/* Direct Styling for Links */
+.web-links a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 5px; /* Spacing around dividers */
+    transition: color 0.2s;
+}
+
+/* Hover Effect for Links */
+.web-links a:hover {
+    color: #557A6B;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .portfolio-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .web-links {
+        text-align: center;
+        font-size: 14px;        /* Slightly reduces link text size for small screens */
+        line-height: 1.8;       /* Gives extra breathing room if links wrap to two lines */
+    }
+}
