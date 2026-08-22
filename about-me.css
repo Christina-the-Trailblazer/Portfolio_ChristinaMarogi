@@ -1,0 +1,66 @@
+body {
+    background-color: #E2ECE9;
+    font-family: Arial, sans-serif;
+}
+
+/* Makes business card sit inline */
+.business-card {
+    display: inline-block;
+    vertical-align: top;       /* Aligns top edge with About Me */
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Make About Me sit right next to business card */
+.about-me {
+    display: inline-block;
+    vertical-align: top;       /* Aligns top edge with Business Card */
+    width: 450px;              /* Width of your text box */
+    background-color: white;
+    padding: 30px 40px 30px 30px;
+    margin-top: 40px;          /* Matches card top position */
+    margin-left: 30px;         /* Creates gap between card and text */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+
+}
+
+.about-me-header {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.about-highlights li {
+    margin-bottom: 12px; /* Controls spacing between bullets cleanly */
+}
+
+/* Optional spacing above the Education divider */
+.education-section {
+    margin-top: 24px;
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+}
+
+/* Mobile adjustments for screens 768px and smaller */
+@media (max-width: 768px) {
+    .business-card,
+    .about-me {
+        display: block;          /* Stacks them vertically */
+        width: 90%;              /* Forces both cards to match width */
+        max-width: 340px;        /* Caps maximum size on larger mobile screens */
+        margin: 20px auto;       /* Centers both horizontally */
+        padding: 24px 20px;      /* Standardizes padding so text box area is identical */
+        box-sizing: border-box;  /* Prevents padding from breaking width alignment */
+    }
+
+    .about-me {
+        margin-top: 15px;        /* Tightens gap between business card and about me */
+    }
+}

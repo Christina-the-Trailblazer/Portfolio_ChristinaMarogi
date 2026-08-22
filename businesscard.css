@@ -1,0 +1,96 @@
+body {
+    background-color: #E2ECE9;
+    font-family: Arial, sans-serif;
+}
+
+/* Card Container Adjustments */
+.business-card {
+    width: 90%;
+    max-width: 320px;          /* Prevents card from getting overly wide */
+    background-color: white;
+    padding: 24px 20px;        /* Reduces top/bottom vertical padding */
+    margin-top: 40px;
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Circular Avatar Sizing */
+.profile-pic {
+    width: 110px;              /* Sets explicit width */
+    height: 110px;             /* Sets matching height for a 1:1 square ratio */
+    object-fit: cover;         /* Keeps picture centered without distortion */
+    border-radius: 50%;        /* Makes it a clean circle */
+    margin-bottom: 8px;
+}
+
+.profile-pic {
+    max-width: 100%;  
+    object-fit: cover;
+   
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.business-card p.fullName_bc {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+   
+}
+
+
+.social-link {
+    /* Elegant dark gray instead of default blue */
+    color: #333333;    
+    /* Removes the default underline for a cleaner look */
+    text-decoration: none;   
+    /* Gives it a slightly crisp weight */
+    font-weight: 500;        
+    /* Smoothly transitions the color change */
+    transition: color 0.2s;    
+ 
+}
+
+.social-link:hover {
+    /* A beautiful, deep sage green on hover */
+    color: #557A6B;     
+    /* Brings back the underline ONLY when hovering */
+    text-decoration: underline;
+}
+
+/* Mobile adjustments for screens 400px and smaller */
+@media (max-width: 400px) {
+    .business-card {
+        width: 88%;              /* Uses relative screen percentage */
+        max-width: 320px;
+        padding: 20px 15px;      /* Reduces padding so inner content has room */
+        margin: 20px auto;       /* Centers horizontally with clean top margin */
+    }
+
+    .profile-pic {
+        width: 90px;             /* Constrains giant profile image */
+        height: 90px;
+        border-radius: 50%;      /* Circles image cleanly */
+        object-fit: cover;
+    }
+
+    .business-card p.fullName_bc {
+        font-size: 22px;         /* Scales down name size to fit one line */
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+
+    .designation {
+        font-size: 13px;         /* Keeps job title compact */
+    }
+
+    .social-media h2 {
+        font-size: 16px;         /* Scales down 'Connect with Me' text */
+        margin-top: 10px;
+    }
+}

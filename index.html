@@ -3,18 +3,25 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christina Marogi | Portfolio</title>
-    
-    <!-- Link the heading CSS from the subfolder -->
-    <link rel="stylesheet" href="header.css" />
-    
+
     <!-- Link your main page CSS -->
     <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Link the CSS for header -->
+    <link rel="stylesheet" href="header.css" />
+    
+    <!-- Link the CSS for business card code -->
+    <link rel="stylesheet" href="businesscard.css" />
+
+    <!-- Link the CSS for about me code -->
+    <link rel="stylesheet" href="about-me.css" />
+
 </head>
 <body>
 
     <!-- Header markup directly in index.html -->
     <header class="portfolio-header">
-        <p class="fullName">Christina Marogi</p>
+        <p class="fullName">Christina Marogi 🌸 </p>
         
         <nav class="web-links">
             <a href="https://www.linkedin.com/in/cmarogidev/" class="webpage-link">About Me</a> | 
@@ -25,7 +32,53 @@
         </nav>
     </header>
 
+    <!-- business card code -->
+    <div class="business-card">
+        <img class="profile-pic"
+        src="profilePic.jpg" alt="Cherry Blossom Profile Picture"/>
+    
+        <p class="fullName_bc">🌸 Christina Marogi 🌸 </p>
+        <p class="designation">Web | Mobile | Software Developer</p>
+        
+        <hr> 
+        <p>cmarogi.dev@gmail.com</p>
+        <hr>
+        
+        <!-- new div for social media -->
+        
+        <div class="social-media">
+            <h2>Connect with Me!!!</h2>
+            <a href="https://www.linkedin.com/in/cmarogidev/" class="social-link">LinkedIn</a> | <a href="https://github.com/Christina-the-Trailblazer" class="social-link">GitHub</a>
+             
+        </div>      
+    </div>
 
+        <!-- About me/Intro -->
+    <div class="about-me">
+        <p class="about-me-header">Hello World! I'm Christina 👋</p>
+        <p>
+            I’m a developer who loves the challenge of taking a complex concept 
+            and refining it into a smooth, seamless digital experience. From responsive web 
+            platforms to intuitive mobile apps, I focus on writing clean, accessible code with an 
+            eye for detail.
+        </p>
 
+        <ul class="about-highlights">
+            <li><strong>What I Do:</strong> Build responsive web applications, mobile apps, and custom software solutions.</li>
+            <li><strong>My Focus:</strong> Crafting clean UI/UX, writing maintainable code, and optimizing app performance.</li>
+            <li><strong>My Goal:</strong> To collaborate on innovative projects that make a meaningful impact.</li>
+        </ul>
+
+        <!-- Education section merged inside the same card -->
+        <div class="education-section">
+            <p class="about-me-header">Education and Background</p>
+            <div class="edu-item">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p class="school">Oakland University • Graduated 2025</p>
+                <p class="details">Relevant Coursework: Mobile App Development, Web Development, Software Design.</p>
+            </div>
+        </div>
+    </div>
+     
 </body>
 </html>

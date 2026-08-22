@@ -9,6 +9,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 /* Name Styling */
@@ -37,10 +40,11 @@
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .portfolio-header {
         flex-direction: column;
         align-items: center;
+        border-radius: 12px;
     }
 
     .web-links {
